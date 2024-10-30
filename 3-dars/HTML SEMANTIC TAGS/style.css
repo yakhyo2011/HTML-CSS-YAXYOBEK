@@ -1,0 +1,223 @@
+body, ul, li, h1, h2, a{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+
+header{
+    padding: 20px;
+    width: 100%;
+
+    text-align: center;
+    background-color: rgb(73, 68, 68);
+    color: white;
+    
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+
+header h1{ 
+    padding: 6px 12px;
+    
+    display: inline-block;
+    border: 3px solid white;
+    border-radius: 40px;
+}
+
+section.banner{
+    position: relative;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+section.banner div.welcome{
+    padding: 30px;
+    position: absolute;
+    left: 0;
+    top: 42%;
+
+    background-color: rgb(51, 44, 44);
+    color: white;
+}
+
+section.banner h2{
+    font-size: 70px;
+}
+
+section.banner h2 span{
+    font-size: 1.3em;
+}
+
+nav{
+    padding: 20px;
+    position: sticky;
+    top: 90px;
+    text-wrap: nowrap;
+    background-color: lightgrey;
+}
+
+nav ul{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav li{
+    width: 25%;
+    display: inline-block;
+}
+nav li:hover{
+    text-decoration: underline;
+    color: rgb(226, 84, 84);
+
+}
+
+nav li a{
+    text-decoration: none;
+    color: rgb(129, 127, 127);
+}
+
+nav li a.join{
+    color: rgb(226, 84, 84);
+}
+
+main{
+    padding: 0;
+    margin: 80px auto;
+    max-width: 100%;
+    width: 1200px;
+    box-sizing: border-box;
+}
+
+main h2{
+    font-size: 36px;
+    color: rgb(226, 84, 84);
+}
+
+main p{
+    line-height: 2em;
+}
+
+main ul.images li{
+    display: inline-block;
+    width: 41%;
+}
+main ul.images li img{
+    max-width: 100%;
+}
+
+section.join-game{
+    padding: 60px 20px;
+    text-align: center;
+    color: black;
+    /* background-color: lightgrey; */
+    /* color: rgb(129, 127, 127); */
+    background-color: gold;
+}
+
+form h2{
+    font-size: 30px;
+}
+
+form input{
+    padding: 10px 20px;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 30px;
+    border: 3px solid white;
+    background-color: gold;
+}
+
+footer{
+    padding: 10px;
+    text-align: center;
+    
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    background-color: rgb(73, 68, 68);
+    color: white;
+    background-color: red;
+}
+form input:hover{
+    background-color: lightblue;
+}
+
+@media screen and (max-width: 1050px){
+    div.welcome h2{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    div.welcome h2{
+        font-size: 30px;
+    }
+    ul{
+        font-size: 10px;
+        
+    }
+}
+
+@media screen and (max-width: 560px){
+
+    header{
+        position: relative;
+    }
+    div.welcome{
+        text-align: center;
+        position: relative !important;
+    }
+
+    div.welcome h2{
+        font-size: 20px !important;
+    }
+
+    div.welcome span{
+        font-size: 1em !important;
+    }
+    
+    div h2 br{
+        display: none;
+    }
+    ul li{
+        width: 100%;
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav{
+        top:0
+    }0
+    main h2{
+        text-align: center;
+        font-size: 20px;
+    }
+    main p{
+        font-size: 10px;
+    }
+  
+    ul.images li{
+        display: block !important;
+        width: 100% !important;
+        text-align: center;
+    }
+    section.join-game{
+        font-size: 10px;
+    }
+    form input{
+        font-size: 10px;
+    }
+    footer p{
+        font-size: 10px;
+    }
+   
+}
+
+

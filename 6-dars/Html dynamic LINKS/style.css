@@ -1,0 +1,57 @@
+html{
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+nav{
+    width: 100%;
+    position: fixed;
+    background-color: lightblue;
+    top: 0;
+    text-wrap: nowrap;
+}
+nav ul{
+    text-align: end;
+}
+
+nav li{
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    
+}
+section{
+    scroll-margin-top: 70px;
+}
+
+#home, #about, #contact, #sign_up{
+    min-height: 100vh;
+}
+#home{
+    background-color: red;
+    text-align: center;
+}
+#about{
+    background-color: blue;
+    text-align: center;
+}
+#contact{
+    background-color: green;
+    text-align: center;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(33, 5, 62);
+    width: 100%;
+    text-align: center
+
+}
+#footer{
+    background-color: chocolate;
+}
+body{
+    background-color: black;
+}
+section#home{
+    padding-top: 50px;
+}
