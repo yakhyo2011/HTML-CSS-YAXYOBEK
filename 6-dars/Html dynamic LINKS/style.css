@@ -10,13 +10,13 @@ nav{
     text-wrap: nowrap;
 }
 nav ul{
-    text-align: end;
+    max-width: 1200px;
+    
 }
 
 nav li{
+    width: 25%;
     display: inline-block;
-    width: 100px;
-    text-align: center;
     
 }
 section{
