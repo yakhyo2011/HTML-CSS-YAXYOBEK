@@ -47,6 +47,8 @@ header a{
 
 header a:hover{
     text-decoration: underline;
+    background-color: white;
+    flex-direction: initial;
 }
 main section{
     padding: 10px;
