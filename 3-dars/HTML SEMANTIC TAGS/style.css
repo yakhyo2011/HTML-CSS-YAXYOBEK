@@ -98,21 +98,24 @@ main p{
     line-height: 2em;
 }
 
-main ul.images li{
-    display: inline-block;
-    width: 41%;
+section.images{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   
+   
 }
-main ul.images li img{
-    max-width: 100%;
+section img{
+    width: 400px;
+    
 }
 
 section.join-game{
     padding: 60px 20px;
     text-align: center;
     color: black;
-    /* background-color: lightgrey; */
-    /* color: rgb(129, 127, 127); */
     background-color: gold;
+    
 }
 
 form h2{
@@ -144,7 +147,9 @@ footer{
 form input:hover{
     background-color: lightblue;
 }
-
+form input:focus{
+        background-color: lightblue;
+}
 @media screen and (max-width: 1050px){
     div.welcome h2{
         font-size: 40px;

@@ -15,40 +15,57 @@ body{
 
 header{
     padding: 5px;
-
-    position: sticky;
     top: 0;
     width: 100%;
     z-index: 1;
     background-color: blue;
     color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
 header nav{
-    text-wrap: nowrap;
     text-align: center;
+    padding: 10px;
+    gap: 10px;
+
+    
 }
 
-header ul li{
-    display: inline-block;
-    width: 100px;
-    color: black;
-    background-color: gold;
+header h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
     border: 1px solid black;
-    border-radius: 60px;
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 10px;
+}
+header h1:hover{
+    background-color: yellow;
+    cursor: cell;
 }
 
 header a{
     text-decoration: none;
     color: black;
     font-size: 20px;
+    border: 1px solid black;
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 header a:hover{
     text-decoration: underline;
-    background-color: white;
-    flex-direction: initial;
+    background-color: yellow;
+    cursor: move;
+
+    
 }
 main section{
     padding: 10px;
@@ -132,9 +149,11 @@ main section#contact form input:where([type=email], [type=text], [type=password]
         border: 1px solid black;
     }
 }
+
 main section#contact form input:nth-child(odd){
     margin: 5px;
 }
+
 footer{
     padding: 2px;
 
@@ -148,19 +167,107 @@ footer{
     background-color: slategray;
     color: blue;
 }
+
 main section p{
-    column-count: 6;
+    column-count: 3;
     
 }
+
 main section{
     padding: 20px;
+    
+}
+
+#images img{
+    width: 600px;
+    height: 600px;
+}
+#images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 @media screen and (max-width: 560px){
     header a{
-        font-size: 15px;
     }
     header li{
         width: 80px !important;
+    }
+    main section#about_me img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    main section#contact form input:where([type=email], [type=text], [type=password], [type=submit]){
+        font-size: 10px;
+        width: 200px;
+        height: 25px;
+    }
+    
+    form{
+        width: 250px !important;
+    }
+
+    section#contact h1{
+        font-size: 20px;
+    }
+
+    section#skills p{
+        font-size: 14px;
+        column-count: 1;
+    }
+    
+    section div p{
+        font-size: 14px;
+        column-count: 1;
+    }
+    
+    footer p{
+        font-size: 20px;
+    }
+
+    #images{
+        width: 50px;
+        height: 50px;
+    }
+
+    header h1{
+        font-size: 20px;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav{
+        width: 100%;
+        padding: 10px;
+        gap: 10px;
+    }
+    #images img{
+        width: 100%;
+        height: 100%;
+        gap: 10px;
+        padding: 10px;
+    }
+    #images{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 560px){
+    header li{
+        width: 100px !important;
     }
 }
