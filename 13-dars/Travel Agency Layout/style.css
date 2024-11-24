@@ -1,0 +1,48 @@
+header h1{
+    padding: 40px;
+    
+    background-color: blueviolet;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    font-size: 20px;
+    list-style-type: none;
+}
+
+section ul li{
+    padding: 20px;
+    width: 200px;
+    
+    background-color: rgba(28, 123, 211, 0.712);
+    color: white;
+}
+
+section aside{
+    background-color: rgba(28, 123, 211, 0.712);
+    color: white;
+    text-align: center;
+}
+
+footer{
+    padding: 20px;
+    width: 100%;
+
+    position: fixed;
+    bottom: 0px;
+    
+    text-align: center;
+    background-color: rgba(28, 123, 211, 0.712);
+    color: white;
+}
